@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(48deg, #5cb8ed, #942eec) repeat;
+  margin: auto;
+}
+html {
+  min-height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  padding-top: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 200px;
+  width: 25%;
+  background-color: #333;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #333;
+}
+
+.menu li a:hover {
+  background-color: #111;
+}

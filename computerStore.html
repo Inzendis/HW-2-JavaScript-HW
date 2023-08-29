@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christian Santiago - Personal Web Page</title>
+    <link rel="stylesheet" type="text/css" href="/css/style2.css" />
+  </head>
+
+  <body>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mainpage_v2.html">Main Page V2</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="page3.html">Next JS 13</a></li>
+        <li><a href="/computerStore.html">Custom System</a></li>
+      </ul>
+    </nav>
+
+    <h1>Custom System Store</h1>
+    <div class="hero-section">
+      <section id="customComputer">
+        <h2>Customize Your Computer</h2>
+
+        <label for="processor">Processor:</label>
+        <select id="processor" onchange="calculatePrice()">
+          <option value="0">Select an option</option>
+          <option value="200">Intel i5 - $200</option>
+          <option value="300">Intel i7 - $300</option>
+          <!-- Add more processors as needed -->
+        </select>
+
+        <label for="memory">Memory:</label>
+        <select id="memory" onchange="calculatePrice()">
+          <option value="0">Select an option</option>
+          <option value="50">8GB - $50</option>
+          <option value="100">16GB - $100</option>
+          <!-- Add more memory options as needed -->
+        </select>
+
+        <!-- ... add other components similarly ... -->
+
+        <button onclick="calculatePrice()">Update Price</button>
+
+        <h3>Your Price: <span id="price">$0</span></h3>
+
+        <button onclick="checkout()">Checkout</button>
+      </section>
+
+      <section id="invoice" style="display: none">
+        <!-- This will show the invoice details -->
+      </section>
+    </div>
+    <script src="PriceCalAndCheckout.js"></script>
+  </body>
+</html>

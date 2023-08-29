@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christian Santiago - Personal Web Page</title>
+    <link rel="stylesheet" type="text/css" href="/css/style3.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mainpage_v2.html">Main Page V2</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="page3.html">Next JS 13</a></li>
+        <li><a href="/computerStore.html">Custom System</a></li>
+      </ul>
+    </nav>
+    <div class="section-container">
+      <div class="each-section-container">
+        <div class="section-name">Brief overview of Next.js</div>
+        <div class="section-text-container">
+          <p>
+            Next.js is a renowned open-source JavaScript framework designed for
+            building server-side rendered React apps. It offers developers a
+            swift and straightforward way to craft efficient and scalable web
+            applications, which has made it a favored option for numerous
+            companies.
+          </p>
+        </div>
+      </div>
+
+      <div class="each-section-container">
+        <div class="section-name">Server Components</div>
+        <div class="section-contents-with-picture">
+          <div>
+            <p>
+              Server and Client Components enable developers to create
+              applications that bridge the server and client. This integration
+              merges the dynamic interactivity of client-side applications with
+              the enhanced performance of standard server-side rendering.
+            </p>
+            <p>
+              Much like how React revolutionized our approach to crafting UIs,
+              React Server Components present a fresh perspective on developing
+              hybrid apps that utilize both the server and client. Rather than
+              React solely rendering your entire application on the client-side,
+              like with Single-Page Applications, it now empowers you to decide
+              where your components should render depending on their function.
+            </p>
+          </div>
+          <img
+            src="/HW1-XHTML-and-CSS/assets/serverComponents.PNG"
+            alt="Profile Picture"
+          />
+        </div>
+      </div>
+
+      <div class="each-section-container">
+        <div class="section-name">Enhanced TypeScript support</div>
+        <div class="section-text-container">
+          <p>
+            Next.js 13 now natively supports TypeScript, enabling developers to
+            seamlessly integrate type-checking into their Next.js projects
+            without the need for extra installations. This enhancement aids in
+            minimizing runtime issues, facilitating the early detection and
+            resolution of bugs during the development phase.
+          </p>
+        </div>
+      </div>
+
+      <div class="each-section-container">
+        <div class="section-name">Automatic static optimization</div>
+        <div class="section-text-container">
+          <p>
+            In this release of Next.js, there's an innovative feature termed
+            'automatic static optimization.' This provides developers with the
+            capability to enhance their app's performance without delving into
+            manual configurations. This functionality autonomously produces a
+            static rendition of every page within the app, enabling it to be
+            delivered to users without the need for server-side rendering.
+          </p>
+          <p>
+            Out of the box, Next.js inherently optimizes pages without
+            asynchronous data needs, such as data pulled from external APIs or
+            databases. This implies that for such pages, Next.js pre-builds the
+            HTML during compile time, allowing it to be served to users without
+            any further server-side computations.
+          </p>
+          <p>
+            The automatic static optimization feature in Next.js is instrumental
+            in enhancing an application's performance and scalability. It
+            lightens the server's workload and ensures users receive pages
+            faster. However, it's crucial to understand that this feature is
+            primarily geared towards pages devoid of dynamic data needs. For
+            pages that necessitate dynamic data, developers should leverage one
+            of Next.js's data retrieval techniques, including
+            'getServerSideProps', 'getStaticProps', or 'getServerProps', to
+            obtain the required data and execute server-side rendering of the
+            page.
+          </p>
+        </div>
+      </div>
+
+      <div class="each-section-container">
+        <div class="section-name">Improved file system routing</div>
+        <div class="section-text-container">
+          <p>
+            Next.js 13 introduces a refined file system-based routing mechanism,
+            empowering developers to delineate routes anchored on their
+            application's file system layout. This means that establishing
+            routes becomes as straightforward as generating new files and
+            directories within the application, negating the need for separate
+            manual route configurations in a distinct file.
+          </p>
+          <p>
+            Such an approach simplifies the development and maintenance
+            processes for developers by cutting down on redundant code.
+            Furthermore, this direct representation of routes through the file
+            system allows for a clearer visual and intuitive understanding of
+            the application's structure. This not only enhances clarity but also
+            streamlines navigation and operations within the app.
+          </p>
+        </div>
+      </div>
+
+      <div class="each-section-container">
+        <div class="section-name">Better serverless function support</div>
+        <div class="section-text-container">
+          <p>
+            Next.js 13 seamlessly integrates support for serverless functions,
+            enabling developers to swiftly deploy and execute them within their
+            apps. This facilitates the addition of potent app features without
+            the hassles of server configuration and upkeep. As a result,
+            developers can harness the perks of serverless computing while
+            sidestepping the intricacies of its foundational infrastructure.
+          </p>
+        </div>
+      </div>
+
+      <div class="each-section-container">
+        <div class="section-name">Superior automatic prerendering</div>
+        <div class="section-text-container">
+          <p>
+            Next.js 13 showcases an enhanced automatic prerendering capability,
+            allowing developers to efficiently create static renditions of their
+            apps that can be delivered to users bypassing server-side rendering.
+            This boosts the app's performance and scalability by alleviating
+            server strain and facilitating faster page delivery to users.
+          </p>
+          <p>
+            The enhanced automatic prerendering is particularly beneficial for
+            high-traffic applications, as it enables them to accommodate a more
+            significant number of requests without taxing server resources
+            further. Additionally, it's advantageous for apps accessed over
+            sluggish internet connections, providing a better user experience by
+            serving content more efficiently.
+          </p>
+        </div>
+      </div>
+
+      <div class="each-section-container">
+        <div class="section-name">Enhanced environment variables</div>
+        <div class="section-text-container">
+          <p>
+            Next.js 13 offers heightened support for environment variables —
+            these are pivotal for holding configuration data for an app. Such
+            variables are instrumental in safeguarding critical details like API
+            keys or passwords. Within the application, these can be readily
+            accessed, ensuring they remain shielded from public view.
+          </p>
+          <p>
+            This enhancement empowers developers to set environment variables
+            within their .env file. They can then utilize the process.env object
+            to retrieve these variables from their code, ensuring availability
+            on both the server and client sides. Additionally, these environment
+            variables can be employed to dictate the framework's behavior,
+            providing more flexibility and control.
+          </p>
+        </div>
+      </div>
+
+      <div class="each-section-container">
+        <div class="section-name">Better image optimization</div>
+        <div class="section-text-container">
+          <p>
+            Next.js 13 boasts enhanced image optimization capabilities,
+            facilitating a reduction in image size and an uplift in the
+            application's performance. This enhancement is realized by
+            leveraging image optimization libraries that autonomously compress
+            and adjust image dimensions.
+          </p>
+          <p>
+            Next.js 13's native integration with image optimization libraries
+            allows developers to enhance image performance without the need for
+            extra installations. This feature is particularly crucial for mobile
+            users, who, when connected to slower internet speeds, can still
+            experience smooth app interactions and quicker image loads.
+          </p>
+        </div>
+      </div>
+
+      <div class="each-section-container">
+        <div class="section-name">Improved serverless deployment</div>
+        <div class="section-text-container">
+          <p>
+            Next.js 13 offers enhanced serverless deployment capabilities,
+            allowing developers to effortlessly deploy apps to cloud platforms
+            without the intricacies of server setup and maintenance. This
+            simplification streamlines the app development and deployment
+            processes, diminishing the infrastructure responsibilities that
+            developers need to handle.
+          </p>
+          <p>
+            Next.js offers a variety of tools to streamline deploying apps in a
+            serverless manner: the serverless target fine-tunes the app for
+            serverless runs and produces essential config files; the functions
+            directory allows for the creation of bespoke serverless functions
+            that the app can invoke; and it boasts compatibility with major
+            serverless platforms like AWS Lambda and Google Cloud Functions.
+          </p>
+        </div>
+      </div>
+
+      <div class="each-section-container">
+        <div class="section-name">Enhanced internationalization support</div>
+        <div class="section-text-container">
+          <p>
+            Internationalization, often abbreviated as i18n, involves adapting
+            an application to support a variety of languages and regional
+            settings. Next.js 13 introduces improved internationalization
+            capabilities, enabling developers to craft globally-compatible
+            applications without the need for extra installations. This
+            enhancement leverages localization libraries, facilitating the
+            straightforward translation and adaptation of applications for
+            diverse languages and regions.
+          </p>
+        </div>
+      </div>
+
+      <div class="each-section-container">
+        <div class="section-name">Better security features</div>
+        <div class="section-text-container">
+          <p>
+            In its latest iteration, Next.js 13 places a heightened emphasis on
+            security, fortifying applications against potential vulnerabilities.
+            This encompasses enhanced backing for Content Security Policies
+            (CSPs) to counteract cross-site scripting (XSS) breaches, and
+            support for the Secure Sockets Layer (SSL) protocol to ensure
+            encrypted and secure exchanges between the server and the client.
+          </p>
+        </div>
+      </div>
+
+      <div class="each-section-container">
+        <div class="section-name">Conclusion</div>
+        <div class="section-text-container">
+          <p>
+            In summary, Next.js 13 stands out as a robust and comprehensive
+            JavaScript framework, simplifying the process for developers to
+            create and roll out top-tier applications. Boasting advancements in
+            TypeScript integration, automatic static optimization, and fortified
+            security measures, it's ideally tailored for crafting efficient and
+            scalable applications designed for a worldwide user base.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
