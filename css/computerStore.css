@@ -24,7 +24,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   border-radius: 200px;
-  width: 25%;
+  width: max-content;
   background-color: #333;
 }
 
@@ -39,4 +39,122 @@ nav {
 
 .menu li a:hover {
   background-color: #111;
+}
+
+li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+h1 {
+  display: block;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+  font-weight: 800;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: max-content;
+  border-radius: 200px;
+  align-self: center;
+  background-color: #333;
+  width: max-content;
+  text-align: center;
+}
+
+.hero-section {
+  background: white;
+  display: flex;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+.item-section {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  height: 150px;
+  border-top: #000 solid;
+  border-bottom: #000 solid;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+div.item-section div {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.inner-section {
+  width: 100%;
+  padding: 30px;
+}
+
+.invoice-container {
+  flex-grow: 1;
+  flex-direction: column;
+  padding-left: 25px;
+}
+
+.items-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.items-column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.checkoutButton {
+  padding: 8px;
+  margin-top: 15px;
+  width: max-content;
+  font-size: 24px;
+  border-radius: 50px;
+  background-color: #333;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+}
+label {
+  font-size: 18px;
+}
+
+section h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+section p {
+  font-size: 24px;
+}
+
+select {
+  font-size: 18px;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+select:hover {
+  border: #000 3px solid;
+}
+option {
+  font-size: 18px;
+  height: 70px;
 }

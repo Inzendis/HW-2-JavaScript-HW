@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christian Santiago - Personal Web Page</title>
+    <link rel="stylesheet" type="text/css" href="/css/invoice.css" />
+  </head>
+  <body onload="loadInvoiceData()">
+    <button class="backButton"><a href="/computerStore.html">Back</a></button>
+    <div class="hero-section">
+      <h2>Components Selected</h2>
+
+      <div id="CPU" class="component">
+        <h3>Processor</h3>
+        <img
+          id="productImage"
+          src=""
+          alt="Selected Processor"
+        />
+        <p id="processorNamePlaceholder"></p>
+        
+      </div>
+
+      <div id="RAM" class="component">
+        <h3>Memory</h3>
+        <img
+          id="productImage2"
+          src=""
+          alt="Selected Memory"
+        />
+        <p id="memoryNamePlaceholder"></p>
+       
+      </div>
+
+      <div id="MOBO"class="component">
+        <h3>Motherboard</h3>
+        <img
+          id="productImage3"
+          src=""
+          alt="Selected Motherboard"
+        />
+        <p id="moboNamePlaceholder"></p>
+       
+      </div>
+
+      <div id="CPUCOOLER" class="component">
+        <h3>CPU Cooler</h3>
+        <img
+          id="productImage4"
+          src=""
+          alt="Selected CPU Cooler"
+        />
+        <p id="cpuCoolerNamePlaceholder"></p>
+        
+      </div>
+
+      <div id="PSU" class="component">
+        <h3>Power Supply Unit</h3>
+        <img
+          id="productImage5"
+          src=""
+          alt="Selected PSU"
+        />
+        <p id="psuNamePlaceholder"></p>
+     
+      </div>
+
+      <div id="GPU" class="component">
+        <h3>Graphics Card</h3>
+        <img
+          id="productImage6"
+          src=""
+          alt="Selected GPU"
+        />
+        <p id="gpuNamePlaceholder"></p>
+       
+      </div>
+
+      <div id="CASE" class="component">
+        <h3>Case</h3>
+        <img
+          id="productImage7"
+          src=""
+          alt="Selected Case"
+        />
+        <p id="caseNamePlaceholder"></p>
+       
+      </div>
+
+      <div id="M2STORAGE" class="component">
+        <h3>M.2 Storage</h3>
+        <img
+          id="productImage8"
+          src=""
+          alt="Selected M.2 Storage"
+        />
+        <p id="m2NamePlaceholder"></p>
+     
+      </div>
+        <div class="price-section">
+          <h2>Pricing Details</h2>
+          <p>Base Price: <span id="basePricePlaceholder">$0.00</span></p>
+          <p>Sales Tax: <span id="taxPlaceholder">$0.00</span></p>
+          <p>Total: <span id="totalPlaceholder">$0.00</span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="PriceCalAndCheckout.js"></script>
+  </body>
+</html>

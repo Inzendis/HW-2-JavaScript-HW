@@ -44,7 +44,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   border-radius: 200px;
-  width: 25%;
+  width: max-content;
   background-color: #ffffff;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), 0 0 8px 0 rgba(0, 0, 0, 0.8);
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christian Santiago - Personal Web Page</title>
-    <link rel="stylesheet" type="text/css" href="/css/style2.css" />
+    <link rel="stylesheet" type="text/css" href="/css/computerStore.css" />
   </head>
 
   <body>
@@ -14,42 +14,250 @@
         <li><a href="mainpage_v2.html">Main Page V2</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="page3.html">Next JS 13</a></li>
-        <li><a href="/computerStore.html">Custom System</a></li>
+        <li><a href="/computerStore.html">Custom System Store</a></li>
       </ul>
     </nav>
 
     <h1>Custom System Store</h1>
     <div class="hero-section">
-      <section id="customComputer">
+      <section class="inner-section" id="customComputer">
         <h2>Customize Your Computer</h2>
+        <div class="items-row">
+          <div class="items-column">
+            <div class="item-section">
+              <div>
+                <label for="processor">Processor:</label>
+                <img
+                  id="productImage"
+                  alt="Selected Product Image"
+                  src="/assets/intelCorei5-13600k.jpg"
+                />
+              </div>
+              <select id="processor" onchange="calculatePrice()">
+                <option value="0">Select an option</option>
+                <option data-id="Intel i5 13600k" value="317.24">
+                  Intel i5 13600k - $317.24
+                </option>
+                <option data-id="Intel i7 13700k" value="364.99">
+                  Intel i7 13700k - $364.99
+                </option>
+                <option data-id="Intel i9 13900k" value="551.99">
+                  Intel i9 13900k - $551.99
+                </option>
+                <option data-id="Ryzen 7 7800x3D" value="384.99">
+                  Ryzen 7 7800x3D - $384.99
+                </option>
+                <option data-id="Ryzen 9 7900x3D" value="478.54">
+                  Ryzen 9 7900x3D - $478.54
+                </option>
+                <option data-id="Ryzen 9 7950x3D" value="659.00">
+                  Ryzen 9 7950x3D - $659.00
+                </option>
+                <!-- Add more processors as needed -->
+              </select>
+            </div>
+            <div class="item-section">
+              <div>
+                <label for="memory">Memory:</label>
+                <img
+                  id="productImage2"
+                  alt="Selected Product Image"
+                  src="/assets/ddr5_32gb_6400.jpg"
+                />
+              </div>
+              <select id="memory" onchange="calculatePrice()">
+                <option value="0">Select an option</option>
+                <option data-id="2x32GB DDR5 6400" value="214.99">
+                  2x32GB DDR5 6400 - $214.99
+                </option>
+                <option data-id="2x24GB DDR5 8000" value="279.99">
+                  2x24GB DDR5 8000 - $279.99
+                </option>
+                <option data-id="2x16GB DDR5 7800" value="199.99">
+                  2x16GB DDR5 7800 - $199.99
+                </option>
+              </select>
+            </div>
 
-        <label for="processor">Processor:</label>
-        <select id="processor" onchange="calculatePrice()">
-          <option value="0">Select an option</option>
-          <option value="200">Intel i5 - $200</option>
-          <option value="300">Intel i7 - $300</option>
-          <!-- Add more processors as needed -->
-        </select>
+            <div class="item-section">
+              <div>
+                <label for="mobo">Motherboard:</label>
+                <img
+                  id="productImage3"
+                  alt="Selected Product Image 3"
+                  src="/assets/Intel_DDR5_13th.jpg"
+                />
+              </div>
+              <select id="mobo" onchange="calculatePrice()">
+                <option value="0">Select an option</option>
+                <option
+                  data-id="MSI MPG Z790 Edge WiFi Gaming Intel"
+                  value="309.99"
+                >
+                  MSI MPG Z790 Edge WiFi Gaming Intel - $309.99
+                </option>
+                <option
+                  data-id="GIGABYTE B650 AORUS Elite Ax AM5"
+                  value="199.00"
+                >
+                  GIGABYTE B650 AORUS Elite Ax AM5 - $199.00
+                </option>
+                <option
+                  data-id="ASUS ROG Crosshair X670E Hero (WiFi 6E) Socket AM5"
+                  value="637.66"
+                >
+                  ASUS ROG Crosshair X670E Hero (WiFi 6E) Socket AM5 - $637.66
+                </option>
+              </select>
+            </div>
 
-        <label for="memory">Memory:</label>
-        <select id="memory" onchange="calculatePrice()">
-          <option value="0">Select an option</option>
-          <option value="50">8GB - $50</option>
-          <option value="100">16GB - $100</option>
-          <!-- Add more memory options as needed -->
-        </select>
+            <div class="item-section">
+              <div>
+                <label for="cpuCooler">CPU Cooler:</label>
+                <img
+                  id="productImage4"
+                  alt="Selected Product Image 4"
+                  src="/assets/CPU_AirCool.jpg"
+                />
+              </div>
+              <select id="cpuCooler" onchange="calculatePrice()">
+                <option value="0">Select an option</option>
+                <option data-id="be quiet! Dark Rock Pro 4" value="89.90">
+                  be quiet! Dark Rock Pro 4 - $89.90
+                </option>
+                <option
+                  data-id="Corsair iCUE H150i Elite LCD XT Liquid CPU Cooler"
+                  value="269.99"
+                >
+                  Corsair iCUE H150i Elite LCD XT Liquid CPU Cooler - $269.99
+                </option>
+              </select>
+            </div>
 
-        <!-- ... add other components similarly ... -->
+            <div class="item-section">
+              <div>
+                <label for="psu">Power Supply:</label>
+                <img
+                  id="productImage5"
+                  alt="Selected Product Image 5"
+                  src="/assets/msi1000wGold.jpg"
+                />
+              </div>
+              <select id="psu" onchange="calculatePrice()">
+                <option value="0">Select an option</option>
+                <option
+                  data-id="MSI MPG A1000G Full Modular - 80 Plus Gold Certified 1000W"
+                  value="149.99"
+                >
+                  MSI MPG A1000G Full Modular - 80 Plus Gold Certified 1000W -
+                  $149.99
+                </option>
+                <option
+                  data-id="EVGA SuperNOVA 1000 GT - 80 Plus Gold 1000W"
+                  value="159.99"
+                >
+                  EVGA SuperNOVA 1000 GT - 80 Plus Gold 1000W - $159.99
+                </option>
+              </select>
+            </div>
 
-        <button onclick="calculatePrice()">Update Price</button>
+            <div class="item-section">
+              <div>
+                <label for="gpu">Graphics Card:</label>
+                <img
+                  id="productImage6"
+                  alt="Selected Product Image 6"
+                  src="/assets/rtx3080ti_evga.jpg"
+                />
+              </div>
+              <select id="gpu" onchange="calculatePrice()">
+                <option value="0">Select an option</option>
+                <option
+                  data-id="EVGA GeForce RTX 3080 Ti FTW3 Ultra Gaming 10GB GDDR6X"
+                  value="1310.00"
+                >
+                  EVGA GeForce RTX 3080 Ti FTW3 Ultra Gaming 10GB GDDR6X -
+                  $1,310.00
+                </option>
+                <option
+                  data-id="MSI Gaming GeForce RTX 3070 Ti 8GB GDDR6X"
+                  value="625.00"
+                >
+                  MSI Gaming GeForce RTX 3070 Ti 8GB GDDR6X - $625.00
+                </option>
+                <option
+                  data-id="EVGA GeForce RTX 3090 Ti FTW3 Gaming 24GB GDDR6X"
+                  value="1774.99"
+                >
+                  EVGA GeForce RTX 3090 Ti FTW3 Gaming 24GB GDDR6X - $1774.99
+                </option>
+              </select>
+            </div>
 
-        <h3>Your Price: <span id="price">$0</span></h3>
+            <div class="item-section">
+              <div>
+                <label for="case">Case:</label>
+                <img
+                  id="productImage7"
+                  alt="Selected Product Image 7"
+                  src="/assets/O11_D_EVO.jpg"
+                />
+              </div>
+              <select id="case" onchange="calculatePrice()">
+                <option value="0">Select an option</option>
+                <option
+                  data-id="Lian Li LI PC-O11 Dynamic EVO Black ATX Full Tower"
+                  value="144.99"
+                >
+                  Lian Li LI PC-O11 Dynamic EVO Black ATX Full Tower - $144.99
+                </option>
+                <option
+                  data-id="HYTE Y60 Dual Chamber Panoramic Tempered Glass Mid-Tower ATX"
+                  value="184.99"
+                >
+                  HYTE Y60 Dual Chamber Panoramic Tempered Glass Mid-Tower ATX -
+                  $184.99
+                </option>
+                <option
+                  data-id="CORSAIR iCUE 4000X RGB Tempered Glass Mid-Tower ATX"
+                  value="127.99"
+                >
+                  CORSAIR iCUE 4000X RGB Tempered Glass Mid-Tower ATX - $127.99
+                </option>
+              </select>
+            </div>
 
-        <button onclick="checkout()">Checkout</button>
-      </section>
+            <div class="item-section">
+              <div>
+                <label for="m2">M.2 SSD:</label>
+                <img
+                  id="productImage8"
+                  alt="Selected Product Image 8"
+                  src="/assets/m2SamProGen4.jpg"
+                />
+              </div>
+              <select id="m2" onchange="calculatePrice()">
+                <option value="0">Select an option</option>
+                <option
+                  data-id="SAMSUNG 980 PRO SSD 2TB PCIe NVMe Gen 4"
+                  value="129.99"
+                >
+                  SAMSUNG 980 PRO SSD 2TB PCIe NVMe Gen 4 - $129.99
+                </option>
+                <option
+                  data-id="SAMSUNG 980 PRO SSD 1TB PCIe NVMe Gen 4"
+                  value="74.25"
+                >
+                  SAMSUNG 980 PRO SSD 1TB PCIe NVMe Gen 4 - $74.25
+                </option>
+              </select>
+            </div>
 
-      <section id="invoice" style="display: none">
-        <!-- This will show the invoice details -->
+            <h3>Your Total: <span id="price">$0</span></h3>
+          </div>
+        </div>
+
+        <button class="checkoutButton" onclick="checkout()">Checkout</button>
       </section>
     </div>
     <script src="PriceCalAndCheckout.js"></script>
